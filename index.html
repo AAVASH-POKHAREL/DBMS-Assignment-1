@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color: bisque;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-style: normal;
+                font-size: medium;
+            }
+            h3{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: large;
+                font-style: normal;
+            }
+        </style>
+        <title> Introduction to Dateabase Management System</title>
+    </head>
+    <body>
+        <center><h1> Database Management System</h1></center><br><br>
+        <u><h2> Some Terminologies Related to DBMS</h2></u>
+        <h3> Data </h3>
+        <p>Data is the raw fact about anything which is unprocessed, un-interpreted or unorganized, but able to organize into useful information. For Example: Hari, Manager, Pokhara, 5 etc.Data is a collection of raw information. Here in DBMS system data is specially used for the further process we are trying to do. 
+            Specially for the managemnent of those data by using DBMS as a initial inforamtion data is used. </p>
+        <h3>Information</h3>
+        <p>When raw data is processed and changed it into meaning data, then the meaningful data is called information. Information is processed, interpreted or organized data.
+            For Example: Ram, Student of MMC, Manager of Mega Bank, etc.</p>
+            <h3> Media Data</h3>
+            <p>A multimedia database system is comprised of a multimedia database management system (MM-DBMS) that manages a multimedia database, which is a database containing multimedia data. 
+                Multimedia data may include structured data as well as semi structured and unstructured data such as voice, video, text, and images.
+                 That is, an MM-DBMS provides support for storing, manipulating, and retrieving multimedia data from a multimedia database. In a certain sense, a multimedia database system is a type of heterogeneous database system because it manages heterogeneous data types.</p>
+                 <img src="Media.webp" width="300" height="300">
+                 <h3>Data Dictionary</h3>
+                 <p>A data dictionary in Database Management System (DBMS) can be defined as a component that stores the collection of names, definitions, and attributes for data elements that are being used in a database. The Data Dictionary stores metadata, i.e., data about the database. These data elements are then used as part of a database, research project, or information system.</p>
+                 <img src="Datadictionary.png" width="800" height="300">
+                 <h3>Database</h3>
+                 <p>A database is an organized collection of data, so that it can be easily accessed and managed.
+                    The main purpose of the database is to operate a large amount of information by storing, retrieving, and managing data.
+
+There are many dynamic websites on the World Wide Web nowadays which are handled through databases. For example, a model that checks the availability of rooms in a hotel. It is an example of a dynamic website that uses a database.
+
+                 </p>
+                 <h3> Table</h3>
+                 <p>Table is a simple form of data storage. A table is also considered as a convenient representation of relations.
+                    <br><br>
+                    <p>Lets see an example of an employee table:
+                        <img src="tables.jpg"width="800" height="300">
+                    </p>
+                 </p>
+                 <h3>Tuple(s)</h3>
+                 <p>A tuple in a database management system is one record in the context of relational databases (one row). You can compare the data present in the database with a spreadsheet, with rows (known as tuples) and columns (known as fields or attributes) representing various data types. </p>
+                 <h3>Field(s)</h3>
+                 <p>A database field refers to a set of values arranged in a table and has the same data type. A field is also known as a column or attribute.
+
+                    It is not necessary for the values included in a field to be in the form of text alone, as this is not a requirement. Some databases have the capability of having fields that contain images, files, and other types of media, while others have the capability of having data that links to other files that can be accessed by clicking on the field data.
+                    
+                    In every database system, you can find three modes of fields. They are:
+                    
+                    Required
+                    Calculated
+                    Optional<br><Br>
+                        Required Fields
+                        These fields must be filled out, and skipping them is not an option. You will be presented with an error notice if you do not fill in this field with a value or entry before continuing. If you do not include this information, your database will not be comprehensive.
+                    <br><br>
+                    Calculated Fields
+                    These fields do not require an entry, but they will be automatically calculated by the system from the existing values in other fields. Usually, this type of field will have a formula embedded in it and if you give the range of data to be taken, it will automatically fill the fields with it.
+                <br><br>
+                Optional Fields
+                It is not a condition to fill these up and even if you leave these empty, you will not get an error message. Your database will be complete even without the completion of these fields. Fields are also classified according to the length of the value entered into them. You can have Fixed length fields and Variable Length fields.</p>
+                 <h3>Domain(s)</h3>
+                 <p>In database management, a domain is a set of values that can be stored in a column of a database table. A domain is usually defined by a column's data type, which determines the kind of values that can be stored in the column. For example, a column with a data type of INTEGER can only store numeric values.
+                    <br><br>There are three main types of domains in DBMS: the data domain, the attribute domain, and the relationship domain.<br>
+
+The data domain is the set of all possible values that can be stored in a database. This includes both atomic values (e.g., integers, strings, dates) and complex values (e.g., images, documents). The data domain is typically constrained by the data type of the attribute or column in which the value is stored.
+<br><br>
+The attribute domain is the set of all possible values that can be assigned to an attribute or column. For example, if an attribute represents a person's age, then its domain would be constrained by the range of ages that people can have. Similarly, if an attribute represents a person's name, then its domain would be constrained by the set of all possible names.
+<br><br>
+The relationship domain is the set of all possible relationships between two or more entities. For example, if we have a database of employees and departments, then the relationship between an employee and a department would be represented by a foreign key in the employee table that references the primary key of the department table.
+<br><br>                 
+</p>
+                 <h3>Constraint(s)</h3>
+                 <p>Constraints in DBMS (Database Management Systems) are rules or conditions that are applied to the data within a database to ensure data integrity, consistency, and adherence to business rules. They define limitations and requirements that the data must meet, thereby preventing the entry of invalid or inconsistent data. Constraints serve as a set of predefined rules that govern the behavior and relationships of the data in a database, helping to maintain its accuracy and reliability.</p>
+                 <h3>Key(s)</h3>
+                 <p>We use a key for defining various types of integrity constraints in a database. A table, on the other hand, represents a collection of the records of various events for any relation. Now, there might be thousands of these records, and some of these might even be duplicated.
+
+                            Thus, we need a way in which one can identify all of these records uniquely and separately, i.e., without any duplicates. This hassle is removed with the help of keys.<br><br>
+                    <i>Keys are of seven broad types in DBMS:</i><br><br>
+
+                    <img src="keys.jpg" width="300" height="300"><br><br>
+                    <b>1. Primary Key</b>
+                    <br>The primary key refers to a column or a set of columns of a table that helps us identify all the records uniquely present in that table. <br>
+                    <br><b>2. Super Key</b>
+                    <br>A super key refers to the set of all those keys that help us uniquely identify all the rows present in a table.<br>
+                    <br><b>3. Candidate Key</b>
+                    <br>The candidate keys refer to those attributes that identify rows uniquely in a table. In a table, we select the primary key from a candidate key.<br>
+                    <br><b>4. Alternate Key</b>
+                    <br> As we have stated above, any table can consist of multiple choices for the primary key. But, it can only choose one. Thus, all those keys that did not become a primary key are known as alternate keys.<br>
+                    <br><b>5. Foreign Key</b>
+                    <br> We use a foreign key to establish relationships between two available tables. The foreign key would require every value present in a column/set of columns to match the referential table’s primary key.<br>
+                    <br> <b>6. Composite Key</b>
+                    <br>The composite key refers to a set of multiple attributes that help us uniquely identify every tuple present in a table. <br>
+                    <br> <b>7. Unique Key</b>
+                    <br>A unique key refers to a column/a set of columns that identify every record uniquely in a table. All the values in this key would have to be unique.<br>
+                </p>
+                <p> These are the basic terms used in DBMS. You must be able to understand after studying it.</p>
+            
+
+    </body>
+</html>
